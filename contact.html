@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Valorzone</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style-valorant.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                ⚡ VALORZONE
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="team.html">Team</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tournaments.html">Tournaments</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Header -->
+    <section class="contact-header text-center">
+        <div class="container">
+            <h1>Get In Touch</h1>
+            <p class="lead">Reach Out to Valorzone Esports | Partnerships | Sponsorships | Inquiries</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="row">
+                <!-- Contact Information -->
+                <div class="col-md-4 mb-4">
+                    <div class="contact-info">
+                        <h4>📧 Email</h4>
+                        <p><a href="mailto:info@valorzone.com">info@valorzone.com</a></p>
+                        <p style="font-size: 0.9rem; color: #999; margin-top: 5px;">General Inquiries</p>
+                    </div>
+
+                    <div class="contact-info">
+                        <h4>💼 Business</h4>
+                        <p><a href="mailto:business@valorzone.com">business@valorzone.com</a></p>
+                        <p style="font-size: 0.9rem; color: #999; margin-top: 5px;">Sponsorships & Partnerships</p>
+                    </div>
+
+                    <div class="contact-info">
+                        <h4>📱 Phone</h4>
+                        <p><a href="tel:+1234567890">09946956036</a></p>
+                        <p style="font-size: 0.9rem; color: #999; margin-top: 5px;">Monday - Friday, 9AM - 6PM</p>
+                    </div>
+
+                    <div class="contact-info">
+                        <h4>📍 Location</h4>
+                        <p>Los Angeles, California 90001, USA</p>
+                        <p style="font-size: 0.9rem; color: #999; margin-top: 5px;">Valorzone HQ</p>
+                    </div>
+
+                    <div class="contact-info">
+                        <h4>🔗 Follow Us</h4>
+                        <p>
+                            <a href="#" class="me-3">🐦 Twitter</a>
+                            <a href="#" class="me-3">💬 Discord</a>
+                        </p>
+                        <p>
+                            <a href="#" class="me-3">📺 Twitch</a>
+                            <a href="#">▶️ YouTube</a>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="col-md-8">
+                    <form id="contactForm" class="contact-form" novalidate>
+                        <h3 style="margin-bottom: 30px; color: var(--secondary-color); font-weight: 900;">Send us a Message</h3>
+
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Full Name *</label>
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Your full name" required>
+                            <small class="text-danger" id="nameError"></small>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email Address *</label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="your@email.com" required>
+                            <small class="text-danger" id="emailError"></small>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" id="phone" name="phone" placeholder="+1 (000) 000-0000">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="subject" class="form-label">Subject *</label>
+                            <select class="form-control" id="subject" name="subject" required>
+                                <option value="">-- Select a subject --</option>
+                                <option value="sponsorship">Sponsorship Inquiry</option>
+                                <option value="partnership">Business Partnership</option>
+                                <option value="media">Media Request</option>
+                                <option value="recruitment">Player Recruitment</option>
+                                <option value="general">General Inquiry</option>
+                            </select>
+                            <small class="text-danger" id="subjectError"></small>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message *</label>
+                            <textarea class="form-control" id="message" name="message" rows="6" placeholder="Tell us more about your inquiry..." required></textarea>
+                            <small class="text-danger" id="messageError"></small>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-lg w-100">Send Message</button>
+                        <div id="successMessage" class="alert alert-success mt-3" style="display:none;">
+                            ✅ Thank you! Your message has been sent successfully. We'll get back to you soon!
+                        </div>
+                        <div id="errorMessage" class="alert alert-danger mt-3" style="display:none;">
+                            ❌ Please fill out all required fields correctly.
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section (Optional) -->
+    <section class="about">
+        <div class="container">
+            <h2 class="text-center mb-5">📍 Visit Us</h2>
+            <div class="row">
+                <div class="col-md-12">
+                    <iframe 
+                        width="100%" 
+                        height="400" 
+                        style="border-radius: 15px; border: none; box-shadow: 0 10px 30px rgba(0,0,0,0.1);"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.1841425617447!2d-118.24368!3d34.05223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27f39f%3A0x82c3e2cd319e56e!2sLos%20Angeles%2C%20CA!5e0!3m2!1sen!2sus!4v1234567890" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Valorzone Esports. All rights reserved. | Competitive Gaming Excellence</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
