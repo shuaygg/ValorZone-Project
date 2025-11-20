@@ -1,11 +1,14 @@
 # VALORZONE - Esports Team Website
 
-A website for Valorzone, a professional Valorant esports team. Built with HTML, CSS, Bootstrap, and JavaScript.
-
+A modern esports-themed website where players can explore tournaments, discover competitive teams, and join gaming communities.
 
 **Video:** 
 
 **GitHub:** 
+
+## Made By
+
+Joshua Pornias - Solo work
 
 ## About The Project
 
@@ -41,12 +44,12 @@ Main home page with info about Valorzone
 
 ### team.html
 Shows all 6 team members with their roles:
-- Phoenix One (Duelist)
-- Cipher Tactician (Controller)
-- Killjoy Guard (Sentinel)
-- Sova Scanner (Initiator)
-- Jett Flex (Flex)
-- Pro Coach Elite (Coach)
+- Tenz (Duelist)
+- Shua (Controller)
+- Boaster (Sentinel)
+- Alfajer (Initiator)
+- Kaajak (Flex)
+- Crashies (Coach)
 
 ### tournaments.html
 Lists 4 upcoming tournaments and 6 past wins
@@ -79,8 +82,3 @@ The website is responsive. It changes size to look good on:
 
 Joshua Pornias - Solo work
 
----
-
-**Video:** [Add link after recording]
-
-**GitHub:** [Add link after uploading]
