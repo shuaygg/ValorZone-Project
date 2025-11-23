@@ -1,4 +1,4 @@
-// Contact Form Handler with Validation
+
 document.addEventListener('DOMContentLoaded', function() {
     const contactForm = document.getElementById('contactForm');
     
@@ -6,16 +6,16 @@ document.addEventListener('DOMContentLoaded', function() {
         contactForm.addEventListener('submit', function(e) {
             e.preventDefault();
             
-            // Get form values
+            
             const name = document.getElementById('name').value.trim();
             const email = document.getElementById('email').value.trim();
             const subject = document.getElementById('subject').value;
             const message = document.getElementById('message').value.trim();
             
-            // Clear previous errors
+            
             clearErrors();
             
-            // Validate form
+            
             let isValid = true;
             
             if (!name) {
@@ -39,19 +39,19 @@ document.addEventListener('DOMContentLoaded', function() {
             }
             
             if (isValid) {
-                // Show success message
+                
                 const successMessage = document.getElementById('successMessage');
                 successMessage.style.display = 'block';
                 
-                // Reset form
+                
                 contactForm.reset();
                 
-                // Hide success message after 5 seconds
+                
                 setTimeout(function() {
                     successMessage.style.display = 'none';
                 }, 5000);
                 
-                // Scroll to success message
+               
                 successMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
             } else {
                 const errorMessage = document.getElementById('errorMessage');
@@ -64,13 +64,13 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-// Validate email format
+
 function validateEmail(email) {
     const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return re.test(email);
 }
 
-// Show error message
+
 function showError(elementId, message) {
     const errorElement = document.getElementById(elementId);
     if (errorElement) {
@@ -78,7 +78,7 @@ function showError(elementId, message) {
     }
 }
 
-// Clear all errors
+
 function clearErrors() {
     const errorElements = document.querySelectorAll('.text-danger');
     errorElements.forEach(el => {
@@ -86,7 +86,7 @@ function clearErrors() {
     });
 }
 
-// Smooth scroll for navigation links
+
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         const href = this.getAttribute('href');
@@ -101,7 +101,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Navbar active link highlight on page load and scroll
+
 function updateActiveNavLink() {
     const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
     const currentPage = window.location.pathname.split('/').pop() || 'index.html';
@@ -118,10 +118,10 @@ function updateActiveNavLink() {
     });
 }
 
-// Call on load
+
 window.addEventListener('load', updateActiveNavLink);
 
-// Add animation on scroll for cards
+
 const observerOptions = {
     threshold: 0.1,
     rootMargin: '0px 0px -50px 0px'
@@ -137,7 +137,7 @@ const observer = new IntersectionObserver(function(entries) {
     });
 }, observerOptions);
 
-// Apply observer to cards on page load
+
 window.addEventListener('load', function() {
     document.querySelectorAll('.team-card, .tournament-card').forEach(card => {
         card.style.opacity = '0';
@@ -147,6 +147,35 @@ window.addEventListener('load', function() {
     });
 });
 
-// Console message
+
 console.log('⚡ Valorzone Esports website loaded successfully!');
 console.log('🎮 Ready to dominate the Valorant competitive scene!');
+
+document.addEventListener("DOMContentLoaded", () => {
+    
+    setTimeout(() => {
+        document.body.classList.add('loaded');
+    }, 50);
+
+    t
+    const links = document.querySelectorAll('a');
+
+    links.forEach(link => {
+        link.addEventListener('click', e => {
+            const href = link.getAttribute('href');
+
+            
+            if (href && !href.startsWith('#') && !href.startsWith('mailto:') && !href.startsWith('tel:') && link.target !== '_blank') {
+                e.preventDefault();
+                
+               
+                document.body.classList.remove('loaded');
+
+                
+                setTimeout(() => {
+                    window.location.href = href;
+                }, 500); 
+            }
+        });
+    });
+});
