@@ -1,4 +1,4 @@
-/* ===== VALORANT THEMED STYLES ===== */
+
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +6,7 @@
 }
 
 :root {
-    /* Valorant Colors */
+    
     --valorant-red: #ff4655;
     --valorant-dark: #0a0e27;
     --valorant-blue: #0f3460;
@@ -30,7 +30,7 @@ body {
     min-height: 100vh;
 }
 
-/* ===== NAVBAR - VALORANT STYLE ===== */
+
 .navbar {
     background: linear-gradient(90deg, #0a0e27 0%, #0f3460 50%, #0a0e27 100%) !important;
     padding: 0.8rem 0;
@@ -98,7 +98,7 @@ body {
     filter: invert(1) brightness(1.5);
 }
 
-/* ===== HERO SECTION ===== */
+
 .hero {
     position: relative;
     height: 100vh;
@@ -180,7 +180,7 @@ body {
     border-color: var(--accent-color);
 }
 
-/* Animated elements in hero */
+
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -192,7 +192,7 @@ body {
     }
 }
 
-/* ===== ABOUT SECTION ===== */
+
 .about {
     background: linear-gradient(135deg, #f5f5f5 0%, #e8e8f5 100%);
     padding: 100px 0;
@@ -241,7 +241,7 @@ body {
     box-shadow: 0 25px 60px rgba(255, 70, 85, 0.3);
 }
 
-/* ===== TEAM SECTION ===== */
+
 .team-header {
     background: linear-gradient(135deg, var(--secondary-color) 0%, #533483 100%);
     color: white;
@@ -339,7 +339,6 @@ body {
     margin-top: 10px;
 }
 
-/* ===== TOURNAMENTS SECTION ===== */
 .tournaments-header {
     background: linear-gradient(135deg, var(--secondary-color) 0%, #533483 100%);
     color: white;
@@ -437,7 +436,7 @@ body {
     padding: 100px 0;
 }
 
-/* ===== CONTACT SECTION ===== */
+
 .contact-header {
     background: linear-gradient(135deg, var(--secondary-color) 0%, #533483 100%);
     color: white;
@@ -571,7 +570,7 @@ body {
     }
 }
 
-/* ===== FOOTER ===== */
+
 footer {
     background: var(--secondary-color);
     color: var(--text-light);
@@ -587,7 +586,7 @@ footer p {
     letter-spacing: 1px;
 }
 
-/* ===== RESPONSIVE DESIGN ===== */
+
 @media (max-width: 768px) {
     .hero-content h1 {
         font-size: 3rem;
