@@ -4,11 +4,12 @@ A modern esports-themed website where players can explore tournaments, discover 
 
 **Video:** 
 
-**GitHub:** 
+**GitHub:** Click here to visit the website: https://shuaygg.github.io/ValorZone-Project/
 
 ## Made By
 
-Joshua Pornias - Solo work
+Joshua Pornias
+Matt Harvey Villamin
 
 ## About The Project
 
@@ -78,7 +79,4 @@ The website is responsive. It changes size to look good on:
 - Tablets
 - Small phone screens
 
-## Made By
-
-Joshua Pornias - Solo work
 
