@@ -4,7 +4,7 @@ A modern esports-themed website where players can explore tournaments, discover 
 
 **Video:** 
 
-**GitHub:** 
+**GitHub:** Click here to visit the website: https://shuaygg.github.io/ValorZone-Project/
 
 ## Made By
 
