@@ -8,8 +8,7 @@ A modern esports-themed website where players can explore tournaments, discover 
 
 ## Made By
 
-Joshua Pornias
-Matt Harvey Villamin
+Joshua Pornias and Matt Harvey Villamin
 
 ## About The Project
 
